@@ -1,0 +1,37 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 546 >>
+stream
+BT /F1 16 Tf 50 790 Td (Diagrama UML de Casos de Uso - FreelanceFlow) Tj ET
+BT /F1 10 Tf 50 760 Td (FreelanceFlow - Victor Hideichi Mancini Suzuki) Tj ET
+BT /F1 9 Tf 50 732 Td (Ator principal: Freelancer.) Tj ET
+BT /F1 9 Tf 50 712 Td (Casos de uso: autenticar usuario, cadastrar cliente, gerenciar projetos, registrar atividades,) Tj ET
+BT /F1 9 Tf 50 697 Td (registrar horas, controlar pagamentos e consultar dashboard.) Tj ET
+BT /F1 9 Tf 50 677 Td (O caso de uso implementado e testado com maior profundidade e UC01 - Cadastrar Cliente.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000675 00000 n 
+0000000801 00000 n 
+0000000858 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+907
+%%EOF

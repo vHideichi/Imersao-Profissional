@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+actor Freelancer
+rectangle FreelanceFlow {
+(Cadastrar Cliente)
+(Cadastrar Projeto)
+(Cadastrar Atividade)
+(Registrar Horas)
+(Registrar Pagamento PIX)
+(Acompanhar Cronometro em Tempo Real)
+(Gerar Relatorio)
+}
+Freelancer --> (Cadastrar Cliente)
+Freelancer --> (Cadastrar Projeto)
+Freelancer --> (Cadastrar Atividade)
+Freelancer --> (Registrar Horas)
+Freelancer --> (Registrar Pagamento PIX)
+Freelancer --> (Acompanhar Cronometro em Tempo Real)
+Freelancer --> (Gerar Relatorio)
+@enduml

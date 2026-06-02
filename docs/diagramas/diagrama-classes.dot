@@ -1,0 +1,16 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.55", ranksep="0.75", label="Diagrama de Classes - FreelanceFlow", labelloc=t, fontsize=22, fontname="Helvetica-Bold"];
+  node [shape=plain, fontname="Helvetica"]; edge [fontname="Helvetica", fontsize=10, color="#4b6070", arrowhead="none"];
+  Usuario [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>Usuario</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ nome: string</TD></TR><TR><TD ALIGN="LEFT">+ email: string</TD></TR><TR><TD ALIGN="LEFT">+ senha: string</TD></TR><TR><TD ALIGN="LEFT">+ autenticar()</TD></TR></TABLE> >];
+  Cliente [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>Cliente</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ nome: string</TD></TR><TR><TD ALIGN="LEFT">+ email: string</TD></TR><TR><TD ALIGN="LEFT">+ telefone: string</TD></TR><TR><TD ALIGN="LEFT">+ cadastrar()</TD></TR></TABLE> >];
+  Projeto [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>Projeto</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ nome: string</TD></TR><TR><TD ALIGN="LEFT">+ descricao: string</TD></TR><TR><TD ALIGN="LEFT">+ status: string</TD></TR></TABLE> >];
+  Atividade [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>Atividade</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ descricao: string</TD></TR><TR><TD ALIGN="LEFT">+ status: string</TD></TR></TABLE> >];
+  RegistroHora [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>RegistroHora</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ horas: number</TD></TR><TR><TD ALIGN="LEFT">+ dataRegistro: Date</TD></TR></TABLE> >];
+  Pagamento [label=< <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" COLOR="#1f4e79"><TR><TD BGCOLOR="#1f4e79"><FONT COLOR="white"><B>Pagamento</B></FONT></TD></TR><TR><TD ALIGN="LEFT">+ id: string</TD></TR><TR><TD ALIGN="LEFT">+ valor: number</TD></TR><TR><TD ALIGN="LEFT">+ metodo: string</TD></TR><TR><TD ALIGN="LEFT">+ status: string</TD></TR></TABLE> >];
+  Usuario -> Cliente [taillabel="1", headlabel="0..*", label="gerencia"];
+  Cliente -> Projeto [taillabel="1", headlabel="0..*", label="possui"];
+  Projeto -> Atividade [taillabel="1", headlabel="0..*", label="contém"];
+  Atividade -> RegistroHora [taillabel="1", headlabel="0..*", label="recebe"];
+  Projeto -> Pagamento [taillabel="1", headlabel="0..*", label="tem"];
+}

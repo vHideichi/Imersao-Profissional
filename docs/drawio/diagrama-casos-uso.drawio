@@ -1,0 +1,38 @@
+<mxfile host="app.diagrams.net" modified="2026-06-01T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="freelanceflow" name="Página-1">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Diagrama de Casos de Uso - FreelanceFlow" style="text;html=1;strokeColor=none;fillColor=none;fontSize=24;fontStyle=1;fontColor=#1F2937;align=center;verticalAlign=middle;" parent="1" vertex="1"><mxGeometry x="300" y="20" width="560" height="40" as="geometry" /></mxCell>
+<mxCell id="sys" value="FreelanceFlow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#6B7280;dashed=0;fontStyle=1;fontSize=16;" parent="1" vertex="1"><mxGeometry x="230" y="90" width="820" height="570" as="geometry" /></mxCell>
+<mxCell id="freelancer" value="Freelancer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#111827;fontSize=14;" parent="1" vertex="1"><mxGeometry x="70" y="170" width="70" height="110" as="geometry" /></mxCell>
+<mxCell id="gateway" value="Gateway PIX" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#111827;fontSize=14;" parent="1" vertex="1"><mxGeometry x="1070" y="340" width="80" height="110" as="geometry" /></mxCell>
+<mxCell id="uc1" value="Cadastrar
+Cliente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="330" y="140" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc2" value="Cadastrar
+Projeto" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="560" y="140" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc3" value="Cadastrar
+Atividade" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="790" y="140" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc4" value="Registrar
+Horas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="330" y="300" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc5" value="Controlar
+Cronômetro" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="560" y="300" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc6" value="Registrar
+Pagamento PIX" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="790" y="300" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="uc7" value="Emitir
+Relatório" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#C2410C;fontSize=13;" parent="1" vertex="1"><mxGeometry x="560" y="470" width="160" height="70" as="geometry" /></mxCell>
+<mxCell id="eF0" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc1"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc2"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF2" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc3"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF3" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc4"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF4" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc5"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF5" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc6"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="eF6" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="1" edge="1" source="freelancer" target="uc7"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="ePix" value="integração" style="endArrow=open;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;" parent="1" edge="1" source="uc6" target="gateway"><mxGeometry relative="1" as="geometry" /></mxCell>
+<mxCell id="inc1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;" parent="1" edge="1" source="uc5" target="uc4"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

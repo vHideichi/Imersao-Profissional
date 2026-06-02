@@ -1,0 +1,38 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 607 >>
+stream
+BT /F1 16 Tf 50 790 Td (Diagrama UML de Classes - FreelanceFlow) Tj ET
+BT /F1 10 Tf 50 760 Td (FreelanceFlow - Victor Hideichi Mancini Suzuki) Tj ET
+BT /F1 9 Tf 50 732 Td (Classes principais: Usuario, Cliente, Projeto, Atividade, RegistroHora e Pagamento.) Tj ET
+BT /F1 9 Tf 50 712 Td (Relacionamentos: Cliente 1:N Projeto; Projeto 1:N Atividade; Atividade 1:N RegistroHora; Projeto) Tj ET
+BT /F1 9 Tf 50 697 Td (1:N Pagamento.) Tj ET
+BT /F1 9 Tf 50 677 Td (O diagrama editavel em Draw.io acompanha este PDF e apresenta atributos, PK, FK e) Tj ET
+BT /F1 9 Tf 50 662 Td (responsabilidades por classe.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000736 00000 n 
+0000000862 00000 n 
+0000000919 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+968
+%%EOF

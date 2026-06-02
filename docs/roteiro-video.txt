@@ -1,0 +1,13 @@
+Olá, meu nome é Victor Hideichi Mancini Suzuki e este é o projeto FreelanceFlow, desenvolvido para a disciplina de Imersão Profissional.
+
+O objetivo do sistema é ajudar freelancers a controlar clientes, projetos, atividades, horas trabalhadas e pagamentos. Escolhi esse tema porque ele tem entidades simples, mas bem relacionadas, permitindo demonstrar requisitos, banco relacional, API REST e integração com frontend.
+
+A aplicação foi feita com React e TypeScript no frontend, Node.js com Express no backend e PostgreSQL como banco relacional. Também foi incluído Socket.IO para representar a atualização em tempo real do cronômetro de atividade.
+
+Na documentação, o projeto possui documento de requisitos, casos de uso com rastreabilidade, diagrama de casos de uso, diagrama de classes, DER e relatório de sprints. O caso de uso implementado e testado é o cadastro de cliente.
+
+Agora vou demonstrar o funcionamento. Na tela de clientes, eu preencho nome, e-mail e telefone e clico em salvar. O frontend envia uma requisição POST para a rota /clients do backend. O backend recebe os dados, valida as informações e retorna o cliente cadastrado. Em seguida, a lista na tela é atualizada, mostrando a integração entre frontend e backend.
+
+Também existe um teste automatizado para esse caso de uso, validando que o cadastro retorna status 201 e os dados corretos.
+
+Por fim, no repositório estão os códigos do frontend e backend, os documentos em PDF, os diagramas e o resumo das tarefas planejadas para as sprints.

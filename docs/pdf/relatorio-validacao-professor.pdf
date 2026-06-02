@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 3208 >>
+stream
+BT /F1 16 Tf 50 790 Td (Relatorio de Validacao Academica - FreelanceFlow) Tj ET
+BT /F1 10 Tf 50 760 Td (FreelanceFlow - Victor Hideichi Mancini Suzuki) Tj ET
+BT /F1 9 Tf 50 732 Td (Relatorio de validacao academica - FreelanceFlow) Tj ET
+BT /F1 9 Tf 50 712 Td () Tj ET
+BT /F1 9 Tf 50 692 Td (Aluno: Victor Hideichi Mancini Suzuki) Tj ET
+BT /F1 9 Tf 50 672 Td (Tema: FreelanceFlow) Tj ET
+BT /F1 9 Tf 50 652 Td () Tj ET
+BT /F1 9 Tf 50 632 Td (Requisitos atendidos:) Tj ET
+BT /F1 9 Tf 50 612 Td (- Projeto possui backend Node.js/Express/TypeScript organizado por controllers, routes, services) Tj ET
+BT /F1 9 Tf 50 597 Td (e db.) Tj ET
+BT /F1 9 Tf 50 577 Td (- Projeto possui frontend React/TypeScript/Vite.) Tj ET
+BT /F1 9 Tf 50 557 Td (- Docker Compose possui servicos de banco, backend e frontend; a configuracao foi validada com) Tj ET
+BT /F1 9 Tf 50 542 Td (docker compose config.) Tj ET
+BT /F1 9 Tf 50 522 Td (- Prisma foi acrescentado com schema.prisma coerente com o modelo PostgreSQL existente.) Tj ET
+BT /F1 9 Tf 50 502 Td (- Package-lock existe para backend e frontend e foi regenerado conforme os package.json) Tj ET
+BT /F1 9 Tf 50 487 Td (corrigidos.) Tj ET
+BT /F1 9 Tf 50 467 Td (- DER MySQL Workbench foi refeito com PK, FK, cardinalidades e tipos corretos.) Tj ET
+BT /F1 9 Tf 50 447 Td (- Diagramas UML foram refeitos em Draw.io e PDF.) Tj ET
+BT /F1 9 Tf 50 427 Td (- Roteiro de video de 5 minutos foi gerado em linguagem natural.) Tj ET
+BT /F1 9 Tf 50 407 Td () Tj ET
+BT /F1 9 Tf 50 387 Td (Requisitos parcialmente atendidos:) Tj ET
+BT /F1 9 Tf 50 367 Td (- Validacao de build/testes: os comandos npm ci, npm run build, npm test e prisma validate foram) Tj ET
+BT /F1 9 Tf 50 352 Td (preparados, mas a execucao local foi bloqueada por falhas de rede e erro interno do npm no) Tj ET
+BT /F1 9 Tf 50 337 Td (ambiente.) Tj ET
+BT /F1 9 Tf 50 317 Td (- Validacao Docker em execucao: docker compose config passou, mas docker compose build foi) Tj ET
+BT /F1 9 Tf 50 302 Td (bloqueado porque o Docker Desktop nao conseguiu iniciar no ambiente local.) Tj ET
+BT /F1 9 Tf 50 282 Td (- Validacao dos requisitos especificos da disciplina: o enunciado/PDF nao foi fornecido; a) Tj ET
+BT /F1 9 Tf 50 267 Td (matriz foi feita por criterios academicos gerais de projeto de software.) Tj ET
+BT /F1 9 Tf 50 247 Td () Tj ET
+BT /F1 9 Tf 50 227 Td (Requisitos faltantes no pacote original e corrigidos:) Tj ET
+BT /F1 9 Tf 50 207 Td (- Ausencia de Prisma: corrigida com backend/prisma/schema.prisma e scripts) Tj ET
+BT /F1 9 Tf 50 192 Td (prisma:generate/prisma:validate.) Tj ET
+BT /F1 9 Tf 50 172 Td (- Frontend usava latest e puxava versoes incompativeis com Node 20.16.0: corrigido com versoes) Tj ET
+BT /F1 9 Tf 50 157 Td (estaveis de React 18, Vite 5 e plugin React 4.) Tj ET
+BT /F1 9 Tf 50 137 Td (- Textos com codificacao quebrada em README, frontend e mensagens do backend: corrigidos nos) Tj ET
+BT /F1 9 Tf 50 122 Td (principais arquivos executaveis/documentais.) Tj ET
+BT /F1 9 Tf 50 102 Td (- FKs opcionais no SQL PostgreSQL inicial: corrigidas para NOT NULL.) Tj ET
+BT /F1 9 Tf 50 82 Td (- DER MySQL anterior incompleto para Usuario e nomenclatura solicitada: corrigido.) Tj ET
+BT /F1 9 Tf 50 62 Td () Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 1971 >>
+stream
+BT /F1 9 Tf 50 790 Td (Problemas observados como professor:) Tj ET
+BT /F1 9 Tf 50 770 Td (- Interface ainda demonstra apenas parte dos fluxos; telas completas para atividades, horas e) Tj ET
+BT /F1 9 Tf 50 755 Td (pagamentos aumentariam a nota.) Tj ET
+BT /F1 9 Tf 50 735 Td (- A autenticacao existe no backend, mas nao protege rotas.) Tj ET
+BT /F1 9 Tf 50 715 Td (- Testes cobrem principalmente cadastro de cliente; faltam testes de projetos, atividades,) Tj ET
+BT /F1 9 Tf 50 700 Td (horas, pagamentos e autenticacao.) Tj ET
+BT /F1 9 Tf 50 680 Td (- A documentacao inicial tinha caracteres quebrados, sinal de cuidado insuficiente na revisao) Tj ET
+BT /F1 9 Tf 50 665 Td (final.) Tj ET
+BT /F1 9 Tf 50 645 Td () Tj ET
+BT /F1 9 Tf 50 625 Td (Possiveis sinais de IA:) Tj ET
+BT /F1 9 Tf 50 605 Td (- Textos muito genericos em documentos e roteiro.) Tj ET
+BT /F1 9 Tf 50 585 Td (- Nomes de exemplos muito padronizados, como Website Institucional.) Tj ET
+BT /F1 9 Tf 50 565 Td (- Documentos com estrutura correta, mas pouca evidencia contextual da disciplina quando o) Tj ET
+BT /F1 9 Tf 50 550 Td (enunciado nao esta anexado.) Tj ET
+BT /F1 9 Tf 50 530 Td () Tj ET
+BT /F1 9 Tf 50 510 Td (Possiveis sinais de plagio:) Tj ET
+BT /F1 9 Tf 50 490 Td (- Nao encontrei trechos externos identificaveis no codigo analisado.) Tj ET
+BT /F1 9 Tf 50 470 Td (- O risco maior e documentacao generica parecida com modelos comuns; por isso os artefatos foram) Tj ET
+BT /F1 9 Tf 50 455 Td (reescritos com foco no projeto FreelanceFlow.) Tj ET
+BT /F1 9 Tf 50 435 Td () Tj ET
+BT /F1 9 Tf 50 415 Td (Nota estimada como professor: 7,5/10.) Tj ET
+BT /F1 9 Tf 50 395 Td (Justificativa: boa estrutura geral, Docker Compose configurado, backend/frontend presentes,) Tj ET
+BT /F1 9 Tf 50 380 Td (modelagem e documentos corrigidos. Perde pontos por cobertura incompleta de testes, validacao) Tj ET
+BT /F1 9 Tf 50 365 Td (local bloqueada no ambiente e implementacao parcial dos fluxos da aplicacao.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000003338 00000 n 
+0000003464 00000 n 
+0000005486 00000 n 
+0000005612 00000 n 
+0000005675 00000 n 
+trailer
+<< /Size 8 /Root 7 0 R >>
+startxref
+5724
+%%EOF

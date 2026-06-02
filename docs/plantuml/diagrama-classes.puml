@@ -1,0 +1,11 @@
+@startuml
+class Cliente { id; nome; email; telefone }
+class Projeto { id; nome; descricao; status }
+class Atividade { id; descricao; status }
+class RegistroHora { id; horas; data }
+class Pagamento { id; valor; metodo; status }
+Cliente "1" -- "*" Projeto
+Projeto "1" -- "*" Atividade
+Atividade "1" -- "*" RegistroHora
+Projeto "1" -- "*" Pagamento
+@enduml

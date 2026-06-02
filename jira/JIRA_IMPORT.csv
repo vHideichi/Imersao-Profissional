@@ -1,0 +1,15 @@
+Issue Type,Summary,Description,Status,Sprint
+Task,Definir tema do projeto,Escolha do sistema de gestão freelancer,Done,Sprint 1
+Task,Levantar requisitos e regras de negócio,Documentar RF RNF e RN,Done,Sprint 1
+Task,Criar documento de requisitos,Gerar PDF final de requisitos,Done,Sprint 1
+Task,Elaborar casos de uso,Criar UC e rastreabilidade,Done,Sprint 2
+Task,Criar diagrama de casos de uso,UML do comportamento do sistema,Done,Sprint 2
+Task,Criar diagrama de classes,UML estrutural do domínio,Done,Sprint 2
+Task,Criar DER,Modelo entidade relacionamento,Done,Sprint 2
+Task,Implementar API REST,Endpoints principais em Express,Done,Sprint 3
+Task,Implementar cadastro de cliente,Caso de uso UC01,Done,Sprint 3
+Task,Criar teste automatizado,Validar UC01 com Jest e Supertest,Done,Sprint 3
+Task,Criar frontend React,Tela para cadastro e listagem,Done,Sprint 4
+Task,Integrar frontend e backend,Enviar POST /clients e atualizar tela,Done,Sprint 4
+Task,Adicionar WebSocket,Evento de cronômetro demonstrativo,Done,Sprint 4
+Task,Organizar entrega final,README PDFs e roteiro,Done,Sprint 4

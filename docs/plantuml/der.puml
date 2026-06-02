@@ -1,0 +1,29 @@
+@startuml
+entity CLIENTS { * id : uuid
+--
+name : varchar
+email : varchar
+phone : varchar }
+entity PROJECTS { * id : uuid
+--
+name : varchar
+description : text
+client_id : uuid }
+entity ACTIVITIES { * id : uuid
+--
+description : varchar
+project_id : uuid }
+entity HOUR_ENTRIES { * id : uuid
+--
+worked_hours : numeric
+activity_id : uuid }
+entity PAYMENTS { * id : uuid
+--
+value : numeric
+method : varchar
+project_id : uuid }
+CLIENTS ||--o{ PROJECTS
+PROJECTS ||--o{ ACTIVITIES
+ACTIVITIES ||--o{ HOUR_ENTRIES
+PROJECTS ||--o{ PAYMENTS
+@enduml

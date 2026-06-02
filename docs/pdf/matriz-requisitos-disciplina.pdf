@@ -1,0 +1,47 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1451 >>
+stream
+BT /F1 16 Tf 50 790 Td (Matriz de Requisitos - FreelanceFlow) Tj ET
+BT /F1 10 Tf 50 760 Td (FreelanceFlow - Victor Hideichi Mancini Suzuki) Tj ET
+BT /F1 9 Tf 50 732 Td (Matriz de requisitos - FreelanceFlow) Tj ET
+BT /F1 9 Tf 50 712 Td () Tj ET
+BT /F1 9 Tf 50 692 Td (Observacao: o PDF/texto oficial da disciplina nao foi anexado. A avaliacao abaixo usa criterios) Tj ET
+BT /F1 9 Tf 50 677 Td (academicos gerais e os itens solicitados pelo usuario.) Tj ET
+BT /F1 9 Tf 50 657 Td () Tj ET
+BT /F1 9 Tf 50 637 Td (Atendidos: backend presente, frontend presente, Docker Compose configurado, package-lock) Tj ET
+BT /F1 9 Tf 50 622 Td (presente, DER profissional, UML em Draw.io/PDF, roteiro de video, README revisado.) Tj ET
+BT /F1 9 Tf 50 602 Td (Parcialmente atendidos: testes automatizados existem, mas cobertura e validacao local ficaram) Tj ET
+BT /F1 9 Tf 50 587 Td (limitadas; Prisma foi adicionado como esquema, mas o runtime do projeto segue usando pg para) Tj ET
+BT /F1 9 Tf 50 572 Td (preservar a arquitetura.) Tj ET
+BT /F1 9 Tf 50 552 Td (Faltantes corrigidos: Prisma, locks coerentes, versoes frontend compativeis, codificacao) Tj ET
+BT /F1 9 Tf 50 537 Td (textual, FKs obrigatorias, modelo MySQL Workbench com Usuario.) Tj ET
+BT /F1 9 Tf 50 517 Td (Faltantes remanescentes: enunciado oficial da disciplina para validacao item a item; telas) Tj ET
+BT /F1 9 Tf 50 502 Td (completas para todos os fluxos; protecao de rotas por autenticacao.) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001581 00000 n 
+0000001707 00000 n 
+0000001764 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+1813
+%%EOF

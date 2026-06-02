@@ -1,0 +1,50 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS users (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS clients (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  phone VARCHAR(30) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS projects (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  name VARCHAR(150) NOT NULL,
+  description TEXT NOT NULL,
+  status VARCHAR(50) NOT NULL DEFAULT 'EM_ANDAMENTO',
+  client_id UUID NOT NULL REFERENCES clients(id) ON DELETE CASCADE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS activities (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  description VARCHAR(255) NOT NULL,
+  status VARCHAR(50) NOT NULL DEFAULT 'PENDENTE',
+  project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS hour_entries (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  worked_hours NUMERIC(10,2) NOT NULL CHECK (worked_hours > 0),
+  activity_id UUID NOT NULL REFERENCES activities(id) ON DELETE CASCADE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS payments (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  value NUMERIC(10,2) NOT NULL CHECK (value > 0),
+  method VARCHAR(30) NOT NULL DEFAULT 'PIX',
+  status VARCHAR(50) NOT NULL DEFAULT 'PENDENTE',
+  project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+  created_at TIMESTAMP DEFAULT NOW()
+);

@@ -1,0 +1,21 @@
+import { Router } from 'express';
+import { login, register } from '../controllers/authController';
+import { createClient, deleteClient, getClients, updateClient } from '../controllers/clientController';
+import { createProject, getProjects } from '../controllers/projectController';
+import { createActivity, createHourEntry, createPayment, getActivities, getHours } from '../controllers/activityController';
+
+export const routes = Router();
+routes.get('/health', (_req, res) => res.json({ status: 'ok', projeto: 'FreelanceFlow' }));
+routes.post('/auth/register', register);
+routes.post('/auth/login', login);
+routes.post('/clients', createClient);
+routes.get('/clients', getClients);
+routes.put('/clients/:id', updateClient);
+routes.delete('/clients/:id', deleteClient);
+routes.post('/projects', createProject);
+routes.get('/projects', getProjects);
+routes.post('/activities', createActivity);
+routes.get('/activities', getActivities);
+routes.post('/hours', createHourEntry);
+routes.get('/hours', getHours);
+routes.post('/payments', createPayment);

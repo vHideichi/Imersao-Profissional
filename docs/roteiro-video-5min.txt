@@ -1,0 +1,24 @@
+Roteiro de vídeo - FreelanceFlow
+Aluno: Victor Hideichi Mancini Suzuki
+Duração estimada: 5 minutos
+
+0:00 - 0:30 | Abertura
+Olá, meu nome é Victor Hideichi Mancini Suzuki e este é o FreelanceFlow, um sistema web para gestão de serviços freelancers. A proposta do projeto é centralizar o controle de clientes, projetos, atividades, horas trabalhadas e pagamentos em uma aplicação simples de usar, mas organizada tecnicamente.
+
+0:30 - 1:15 | Problema e objetivo
+O problema observado é que muitos freelancers controlam informações em planilhas ou anotações separadas. Isso dificulta acompanhar o andamento dos projetos, registrar horas e saber quais pagamentos ainda estão pendentes. O objetivo do FreelanceFlow é oferecer uma solução integrada para esse fluxo de trabalho.
+
+1:15 - 2:10 | Funcionalidades
+O sistema possui cadastro de clientes, criação de projetos vinculados ao cliente, cadastro de atividades, registro de horas e controle de pagamentos. Também existe autenticação de usuário e uma estrutura preparada para acompanhamento em tempo real no backend com Socket.IO.
+
+2:10 - 3:00 | Arquitetura
+A arquitetura foi organizada em frontend, backend e banco de dados. O frontend utiliza React com TypeScript e Vite. O backend utiliza Node.js, Express e TypeScript. O banco principal da aplicação é PostgreSQL, executado por Docker Compose. O Prisma foi incluído como esquema formal do banco, permitindo validação do modelo e geração de cliente.
+
+3:00 - 3:45 | Banco e modelagem
+Na modelagem, Cliente se relaciona com Projeto em cardinalidade um para muitos. Projeto se relaciona com Atividade e Pagamento também em um para muitos. Atividade se relaciona com RegistroHora em um para muitos. O DER foi preparado com chaves primárias, chaves estrangeiras, tipos de dados e cardinalidades.
+
+3:45 - 4:30 | Demonstração
+Na demonstração, o usuário acessa o dashboard, cadastra um cliente informando nome, e-mail e telefone, e em seguida pode criar um projeto de exemplo vinculado a esse cliente. A API disponibiliza rotas para clientes, projetos, atividades, horas e pagamentos.
+
+4:30 - 5:00 | Encerramento
+Como resultado, o FreelanceFlow atende à proposta de um sistema acadêmico com documentação, modelagem, backend, frontend, Docker Compose, testes e organização por camadas. O projeto ainda pode evoluir com telas completas para todas as entidades, autenticação protegendo rotas e relatórios financeiros mais detalhados.

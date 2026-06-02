@@ -1,0 +1,17 @@
+
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.45", ranksep="0.7", label="Diagrama de Casos de Uso - FreelanceFlow", labelloc=t, fontsize=22, fontname="Helvetica-Bold"];
+  node [fontname="Helvetica", fontsize=11]; edge [fontname="Helvetica", fontsize=10, color="#4b6070"];
+  Freelancer [shape=plaintext, label=<
+  <TABLE BORDER="0" CELLBORDER="0"><TR><TD><FONT POINT-SIZE="30">&#9787;</FONT></TD></TR><TR><TD><B>Freelancer</B></TD></TR></TABLE>>];
+  subgraph cluster_system { label="Sistema FreelanceFlow"; style="rounded,filled"; color="#9bb7cc"; fillcolor="#f3f7fa"; fontname="Helvetica-Bold"; fontsize=14;
+    UC01 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Cadastrar\nCliente"];
+    UC02 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Cadastrar\nProjeto"];
+    UC03 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Cadastrar\nAtividade"];
+    UC04 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Registrar\nHoras"];
+    UC05 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Registrar\nPagamento PIX"];
+    UC06 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Consultar\nRelatórios"];
+    UC07 [shape=ellipse, style="filled", fillcolor="#ffffff", color="#2f6f9f", label="Acompanhar\nCronômetro"];
+  }
+  Freelancer -> UC01; Freelancer -> UC02; Freelancer -> UC03; Freelancer -> UC04; Freelancer -> UC05; Freelancer -> UC06; Freelancer -> UC07;
+}
